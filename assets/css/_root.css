@@ -1,0 +1,16 @@
+:root {
+  --bs-primary: #ab2331;
+  --bs-secondary: #3D3D3D;
+  --bs-primary-rgb: 171, 35, 49;
+  --bs-secondary-rgb: 61, 61, 61;
+  --bs-body-color-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 0, 0, 0;
+  --bs-font-poppins: 'Poppins', sans-serif;
+  --bs-body-font-family: var(--bs-font-poppins);
+  --bs-body-color: #fff;
+  --bs-body-bg: #000;
+  --bs-link-color: var(--bs-primary);
+  --bs-link-hover-color: var(--bs-secondary);
+  --bs-code-color: #d63384;
+  --bs-highlight-bg: #fff3cd;
+}

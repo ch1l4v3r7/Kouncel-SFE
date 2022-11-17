@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- change language and direction -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOUNCEL</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/poppins" />
+    <link rel="stylesheet" href="assets/css/_root.css" />
+    <link
+      href="assets/libs/fontawesome-free-6.2.0-web/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/libs/fontawesome-free-6.2.0-web/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/libs/fontawesome-free-6.2.0-web/css/solid.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <div class="page">
+        <!-- Add .theme--center_focus to centralize layout box main content -->
+        <div class="layout style--center_focus">
+          <div class="layout-box">
+            <div class="layout-box-header">
+              <!-- Header -->
+              <section class="header">
+                <div class="container">
+                  <div class="header-logo">
+                    <a href="index.html">
+                      <img
+                        class="logo-img"
+                        src="assets/img/logo.svg"
+                        alt="KOUNCEL"
+                      />
+                    </a>
+                  </div>
+                  <div class="header-nav">
+                    <ul>
+                      <li>
+                        <a href="index.html">Home</a>
+                      </li>
+                      <li>
+                        <a href="categories.html">Categories</a>
+                      </li>
+                      <li>
+                        <a href="search.html">Search</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-actions">
+                    <!-- if user exist -->
+                    <!-- <div class="header-actions-user">
+                      <div class="header-actions-user-image">
+                        <img class="user-img" src="" alt="" />
+                      </div>
+                      <div class="header-actions-user-name">
+                        <a href="account.html">Muhammad Ali</a>
+                      </div>
+                    </div>
+                    <div class="header-actions-primary_action">
+                      <a href="index.html" class="form-button">Log out</a>
+                    </div> -->
+                    <!-- else -->
+                    <div class="header-actions-primary_action">
+                      <a href="login.html" class="form-button">Log in</a>
+                    </div>
+                    <!-- end if -->
+                    <div class="header-actions-languages">
+                      <!-- links dropdown -->
+                      <div class="links-dropdown">
+                        <div class="dropdown-header">EN</div>
+                        <div class="dropdown-list">
+                          <!-- please specify link language if it's not the default language on html tag -->
+                          <ul>
+                            <li>
+                              <a href="index.html">English</a>
+                            </li>
+                            <li>
+                              <a href="index.html" lang="ar">العربية</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header-actions-settings layout-drawer-switch">
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="layout-box-main">
+              <!-- early bird -->
+              <section class="early-bird">
+                <div class="container">
+                  <div class="early-bird-image">
+                    <img
+                      class="early-bird-img"
+                      src="assets/img/early-bird.png"
+                      alt=""
+                    />
+                  </div>
+                  <form
+                    action="early-bird-thank-you.html"
+                    class="early-bird-form form"
+                  >
+                    <div class="form-inputs">
+                      <div class="form-input_container">
+                        <input
+                          class="form-input size--large"
+                          type="text"
+                          placeholder="Your e-mail address"
+                          name="email"
+                        />
+                      </div>
+                      <div class="form-input_container">
+                        <button class="form-button size--large" type="submit">
+                          Join Now
+                        </button>
+                      </div>
+                    </div>
+                    <!-- in case form messages needed you can use one of 4 available
+                    types -->
+                    <!-- 1- type danger add theme--danger with .form-message and use <i class="fa-solid fa-circle-exclamation"></i> -->
+                    <!-- 2- type success add theme--success with .form-message and use <i class="fa-solid fa-circle-check"></i> -->
+                    <!-- 3- type warning add theme--warning with .form-message and use <i class="fa-solid fa-triangle-exclamation"></i> -->
+                    <!-- 4- type info add theme--info with .form-message and use <i class="fa-solid fa-circle-question"></i> -->
+                    <!-- <div class="form-messages">
+                      <div class="form-message theme--danger">
+                        <div class="form-message-icon">
+                          <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <div class="form-message-content">danger message</div>
+                      </div>
+                      <div class="form-message theme--success">
+                        <div class="form-message-icon">
+                          <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="form-message-content">success message</div>
+                      </div>
+                      <div class="form-message theme--warning">
+                        <div class="form-message-icon">
+                          <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <div class="form-message-content">warning message</div>
+                      </div>
+                      <div class="form-message theme--info">
+                        <div class="form-message-icon">
+                          <i class="fa-solid fa-circle-question"></i>
+                        </div>
+                        <div class="form-message-content">info message</div>
+                      </div>
+                    </div> -->
+                  </form>
+                  <div class="early-bird-title">
+                    YOUR GO-TO DIGITAL PLATFORM FOR A UNIQUE LEGAL EXPERIENCE
+                  </div>
+                  <div class="early-bird-description">
+                    Legal education has never been easier. Discover various
+                    topics in the legal field and master law with MENA's top
+                    counsels.
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="layout-box-footer">
+              <!-- Footer -->
+              <section class="footer">
+                <div class="container">
+                  <div class="footer-copyrights">
+                    All Rights Reserved. KOUNCEL 2022
+                  </div>
+                  <div class="footer-social_links">
+                    <div class="footer-social_links-header">Follow us</div>
+                    <div class="footer-social_links-list">
+                      <ul>
+                        <li>
+                          <a href="https://www.linkedin.com/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="layout-drawer">
+            <div class="layout-drawer-main">
+              <!-- side menu -->
+              <section class="side-menu">
+                <div class="side-menu-header">
+                  <div class="container">
+                    <div class="side-menu-settings layout-drawer-switch">
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="side-menu-main">
+                  <div class="container">
+                    <!-- if user exist -->
+                    <!-- <div class="side-menu-user">
+                      <div class="side-menu-user-image">
+                        <img class="user-img" src="" alt="" />
+                      </div>
+                      <div class="side-menu-user-name">
+                        <a href="account.html">Muhammad Ali</a>
+                      </div>
+                    </div>
+                    <div class="side-menu-primary_action">
+                      <a href="index.html" class="form-button">Log out</a>
+                    </div> -->
+                    <!-- else -->
+                    <div class="side-menu-user">
+                      <div class="side-menu-user-image">
+                        <img
+                          class="user-img"
+                          src="assets/img/user-avatar.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="side-menu-primary_action">
+                      <a href="login.html" class="form-button">Log in</a>
+                    </div>
+                    <!-- end if -->
+                    <div class="side-menu-nav">
+                      <ul>
+                        <li>
+                          <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                          <a href="categories.html">Categories</a>
+                        </li>
+                        <li>
+                          <a href="search.html">Search</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="side-menu-footer">
+                  <div class="container">
+                    <div class="side-menu-languages">
+                      <ul>
+                        <li>
+                          <a href="index.html">English</a>
+                        </li>
+                        <li>
+                          <a href="index.html" lang="ar">العربية</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
