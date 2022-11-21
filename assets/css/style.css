@@ -43,7 +43,7 @@ a {
 }
 
 .form-input {
-  background-color: #272727;
+  background-color: var(--bs-secondary);
   color: #5B5B5B;
 }
 
@@ -234,22 +234,35 @@ a {
 
 .layout-box {
   min-height: 100%;
-  padding: var(--screen-padding);
+  padding: 0;
   display: grid;
-  gap: 32px;
   grid-template-rows: max-content 1fr max-content;
 }
 
-.layout-box-header {}
+.layout-box-header {
+  padding: var(--screen-padding);
+  display: grid;
+  gap: 32px;
+}
 
-.layout-box-main {}
+.layout-box-main {
+  padding: var(--screen-padding);
+  display: grid;
+  gap: 32px;
+}
 
 .layout.style--center_focus .layout-box-main {
-  display: grid;
   place-content: center;
 }
 
-.layout-box-footer {}
+.layout-box-footer {
+  padding: var(--screen-padding);
+  display: grid;
+}
+
+.layout-box-footer.theme--gray {
+  background-color: #141414;
+}
 
 .layout-drawer {
   position: fixed;
@@ -288,6 +301,26 @@ a {
 @media (max-width: 1023px) {
   .layout.flag--show_drawer .layout-drawer {
     transform: translateX(0);
+  }
+}
+
+@media (min-width: 480px) {
+  .layout-box-footer {
+    gap: 64px 32px;
+  }
+
+  .layout-box-footer.theme--gray {
+    padding: calc(var(--screen-padding) * 2) var(--screen-padding);
+  }
+}
+
+@media (max-width: 479px) {
+  .layout-box-footer {
+    gap: 32px;
+  }
+
+  .layout-box-footer.theme--gray {
+    padding: var(--screen-padding);
   }
 }
 
@@ -614,6 +647,149 @@ a {
   }
 }
 
+/* footer subscription */
+.footer_subscription {}
+
+.footer_subscription>.container {
+  display: grid;
+  justify-content: center;
+  gap: 32px;
+}
+
+.footer_subscription-title {
+  text-align: center;
+  font-weight: 300;
+}
+
+.footer_subscription-form {}
+
+.footer_subscription-form .form-inputs {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 480px) {
+  .footer_subscription-title {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .footer_subscription-form .form-inputs {
+    grid-auto-flow: column;
+  }
+
+  .footer_subscription-form .form-input {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer_subscription-form .form-button {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+@media (max-width: 479px) {
+  .footer_subscription-title {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .footer_subscription-form .input,
+  .footer_subscription-form .button {
+    width: 100%;
+  }
+}
+
+/* footer links */
+.footer_links {}
+
+.footer_links>.container {
+  display: grid;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.footer_links-category {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.footer_links-category-header {
+  color: #3d3d3d;
+}
+
+.footer_links-category-list {}
+
+.footer_links-category-list ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.footer_links-category-list.theme--social ul {
+  grid-auto-flow: column;
+}
+
+.footer_links-category-list li {
+  list-style-type: none;
+}
+
+@media (min-width: 480px) {
+  .footer_links>.container {
+    grid-auto-flow: column;
+  }
+
+  .footer_links-category {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 479px) {
+  .footer_links-category {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+/* footer copyrights */
+.footer_copyrights {}
+
+.footer_copyrights>.container {
+  display: grid;
+  gap: 24px;
+  justify-items: center;
+}
+
+.footer_copyrights-logo {}
+
+.footer_copyrights-logo .logo-img {
+  display: block;
+  max-width: 100%;
+}
+
+.footer_copyrights-copyrights {
+  font-weight: 300;
+  color: #545454;
+}
+
+@media (min-width: 480px) {
+  .footer_copyrights-copyrights {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 479px) {
+  .footer_copyrights-copyrights {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
 /* early bird */
 .early-bird {}
 
@@ -650,6 +826,12 @@ a {
 .early-bird-description {
   text-align: center;
   color: #7A7A7A;
+}
+
+@media (max-width: 1919px) {
+  .early-bird-image .early-bird-img {
+    max-height: 280px;
+  }
 }
 
 @media (min-width: 480px) {
@@ -748,6 +930,12 @@ a {
 }
 
 .early-bird-thank-you-primary_action {}
+
+@media (max-width: 1919px) {
+  .early-bird-thank-you-image .early-bird-thank-you-img {
+    max-height: 280px;
+  }
+}
 
 @media (min-width: 480px) {
   .early-bird-thank-you>.container {
