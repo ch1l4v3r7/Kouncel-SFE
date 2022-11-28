@@ -109,15 +109,17 @@
                 <div class="container">
                   <div class="content_card">
                     <div class="content_card-header">
-                      <div class="content_card-header-title">Log in</div>
+                      <div class="content_card-header-title">
+                        Create Account
+                      </div>
                       <div class="content_card-header-description">
-                        Please enter all your data to login to youe account
+                        Please enter all your data to join KOUNCEL!
                       </div>
                     </div>
                     <div class="content_card-body">
                       <form
-                        action="index.html"
-                        class="login-form form"
+                        action="verify-your-account.html"
+                        class="register-form form"
                         method="get"
                       >
                         <div class="form-inputs">
@@ -126,6 +128,23 @@
                           <!-- 2- option success add theme--success with .form-input_container -->
                           <!-- 3- option warning add theme--warning with .form-input_container -->
                           <!-- 4- option info add theme--info with .form-input_container -->
+                          <div class="form-input_container size--6">
+                            <div class="form-label">Name</div>
+                            <input
+                              class="form-input size--large"
+                              type="text"
+                              placeholder="First Name"
+                              name="first-name"
+                            />
+                          </div>
+                          <div class="form-input_container size--6">
+                            <input
+                              class="form-input size--large"
+                              type="text"
+                              placeholder="Last Name"
+                              name="last-name"
+                            />
+                          </div>
                           <div class="form-input_container">
                             <div class="form-label">E-mail</div>
                             <input
@@ -135,6 +154,59 @@
                               name="email"
                             />
                           </div>
+                          <div class="form-input_container size--6">
+                            <div class="form-label">Date of Birth</div>
+                            <input
+                              class="form-input size--large"
+                              type="date"
+                              placeholder="First Name"
+                              name="date-of-birth"
+                            />
+                          </div>
+                          <div class="form-input_container size--6">
+                            <div class="form-label">Gender</div>
+                            <select
+                              name="gender"
+                              class="form-input size--large"
+                            >
+                              <option value="" hidden>
+                                Select your gender
+                              </option>
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
+                            </select>
+                          </div>
+                          <div class="form-input_container">
+                            <div class="form-label">Country</div>
+                            <select
+                              name="gender"
+                              class="form-input size--large"
+                            >
+                              <option value="" hidden>
+                                Select your country
+                              </option>
+                              <option value="1">country 1</option>
+                              <option value="2">country 2</option>
+                              <option value="3">country 3</option>
+                              <option value="4">country 4</option>
+                              <option value="5">country 5</option>
+                            </select>
+                          </div>
+                          <div class="form-input_container">
+                            <div class="form-label">Profession</div>
+                            <select
+                              name="gender"
+                              class="form-input size--large"
+                            >
+                              <option value="" hidden>
+                                Select your profession
+                              </option>
+                              <option value="1">Profession 1</option>
+                              <option value="2">Profession 2</option>
+                              <option value="3">Profession 3</option>
+                              <option value="4">Profession 4</option>
+                            </select>
+                          </div>
                           <div class="form-input_container">
                             <div class="form-label">Password</div>
                             <input
@@ -142,6 +214,14 @@
                               type="password"
                               placeholder="Enter your password"
                               name="passowrd"
+                            />
+                          </div>
+                          <div class="form-input_container style--next_part">
+                            <input
+                              class="form-input size--large"
+                              type="password"
+                              placeholder="Confirm your password"
+                              name="passowrd-confirm"
                             />
                           </div>
                         </div>
@@ -183,7 +263,7 @@
                               class="form-button size--large"
                               type="submit"
                             >
-                              Log in
+                              Create Account
                             </button>
                           </div>
                         </div>
@@ -192,19 +272,15 @@
                     <div class="content_card-footer">
                       <div class="links_list">
                         <div class="links_list-link">
-                          Don't have account?
-                          <a class="theme--primary" href="register.html"
-                            >Register Now</a
-                          >
+                          Already have an account?
+                          <a class="theme--primary" href="login.html">Log in</a>
                         </div>
-                        <div class="links_list-link">
-                          <a
-                            class="theme--secondary"
-                            href="forgot-password.html"
-                          >
-                            Forgot your password?
-                          </a>
-                        </div>
+                      </div>
+                      <div class="text theme--dark size--small">
+                        By signing up or creating an account, you agree to the
+                        <a href="#">End User License Agreement</a>,
+                        <a href="#">Terms & Conditions</a> and
+                        <a href="#">Privacy Policy</a> including cookie usage
                       </div>
                     </div>
                   </div>

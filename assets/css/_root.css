@@ -1,8 +1,12 @@
 :root {
   --bs-primary: #ab2331;
   --bs-secondary: #272727;
+  --bs-light: #5B5B5B;
+  --bs-dark: #545454;
   --bs-primary-rgb: 171, 35, 49;
   --bs-secondary-rgb: 39, 39, 39;
+  --bs-light-rgb: 91, 91, 91;
+  --bs-dark-rgb: 84, 84, 84;
   --bs-body-color-rgb: 255, 255, 255;
   --bs-body-bg-rgb: 0, 0, 0;
   --bs-font-poppins: 'Poppins', sans-serif;
