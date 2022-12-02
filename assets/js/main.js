@@ -5,3 +5,13 @@
     });
   }
 );
+
+[...document.querySelectorAll(".escape_header_trigger")].forEach((trigger) => {
+  trigger.addEventListener("click", (e) => {
+    console.dir(document.querySelector(".layout-box-header").clientHeight);
+    window.scrollTo({
+      top: document.querySelector(".layout-box-header").clientHeight,
+      behavior: "smooth",
+    });
+  });
+});
