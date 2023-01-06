@@ -19,4 +19,12 @@
 typeof $ === "function" &&
   $(function () {
     $(".slider").slider({});
+
+    $(".faq-question").each(function () {
+      const header = $(".faq-question-title", this);
+      const body = $(".faq-question-body", this);
+      header.on("click", function () {
+        body.slideToggle();
+      });
+    });
   });
