@@ -1484,10 +1484,7 @@ a {
 
 .category-more {}
 
-.category-body {
-
-  overflow: hidden;
-}
+.category-body {}
 
 .category-courses {
   display: flex;
@@ -1721,6 +1718,59 @@ a {
     font-size: 18px;
     line-height: 25px;
   }
+}
+
+/* Slider */
+.slider {
+  position: relative;
+}
+
+.slider-viewport {
+  overflow: hidden;
+}
+
+.slider-viewport>* {
+  transition: transform 1s;
+}
+
+.slider-controllers {}
+
+.slider-controller {
+  position: absolute;
+}
+
+.slider-controller.type--next,
+.slider-controller.type--previous {
+  top: calc(50% - 32px);
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  background-color: var(--bs-secondary);
+  text-align: center;
+  line-height: 64px;
+  cursor: not-allowed;
+}
+
+.slider-controller.type--next.status--active,
+.slider-controller.type--previous.status--active {
+  background-color: var(--bs-primary);
+  cursor: pointer;
+}
+
+[dir="ltr"] .slider-controller.type--next {
+  right: -32px;
+}
+
+[dir="rtl"] .slider-controller.type--next {
+  left: -32px;
+}
+
+[dir="ltr"] .slider-controller.type--previous {
+  left: -32px;
+}
+
+[dir="rtl"] .slider-controller.type--previous {
+  right: -32px;
 }
 
 /* FAQ */
