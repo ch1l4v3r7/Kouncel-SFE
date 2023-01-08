@@ -27,4 +27,10 @@ typeof $ === "function" &&
         body.slideToggle();
       });
     });
+    $("[popup-switch]").click(function () {
+      $(`#${$(this).attr("popup-switch")}`).show();
+    });
+    $(".popup-backdrop, .popup-close").click(function () {
+      $(this).closest(".popup").hide();
+    });
   });

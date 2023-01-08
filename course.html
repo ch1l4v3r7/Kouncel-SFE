@@ -28,6 +28,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://platform-api.sharethis.com/js/sharethis.js#property=63bb1b36cb51d30019514bbd&product=inline-share-buttons&source=platform"
+      async="async"
+    ></script>
   </head>
   <body>
     <div class="screen">
@@ -98,6 +103,65 @@
                     </div>
                     <div class="header-actions-settings layout-drawer-switch">
                       <i class="fa-solid fa-bars"></i>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Course Header -->
+              <section class="course_header">
+                <div class="container">
+                  <div class="course_header-image">
+                    <img
+                      class="course_header-img"
+                      src="assets/img/course-cover.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="course_header-title">
+                    <div class="course_header-title-course_name">
+                      Course Name
+                    </div>
+                    <div class="course_header-title-instructor_name">
+                      Instructor Name
+                    </div>
+                  </div>
+                  <div class="course_header-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates eligendi saepe earum est ratione commodi iusto.
+                    Voluptate, magni ipsa fugit iure dolores ducimus animi,
+                    eligendi tenetur nihil in molestiae ab.
+                  </div>
+                  <div class="course_header-options">
+                    <div class="course_header-option">
+                      <div class="course_header-option-icon">
+                        <i class="fa-solid fa-circle-play"></i>
+                      </div>
+                      <div class="course_header-option-label">trailer</div>
+                    </div>
+                    <div class="course_header-option">
+                      <div class="course_header-option-icon">
+                        <i class="fa-solid fa-desktop"></i>
+                      </div>
+                      <div class="course_header-option-label">sample</div>
+                    </div>
+                    <div class="course_header-option">
+                      <div
+                        class="course_header-option-icon"
+                        popup-switch="share-this"
+                      >
+                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                      </div>
+                      <div class="course_header-option-label">Share</div>
+                    </div>
+                  </div>
+                  <div class="course_header-payment">
+                    <div class="course_header-payment-action">
+                      <button class="form-button" popup-switch="payment">
+                        Subscribe Now
+                      </button>
+                    </div>
+                    <div class="course_header-payment-summary">
+                      1,500 EGP For 3 months
                     </div>
                   </div>
                 </div>
@@ -631,6 +695,38 @@
             </div>
           </div>
         </div>
+        <section class="popup" id="payment">
+          <div class="container">
+            <div class="popup-backdrop"></div>
+            <div class="popup-box">
+              <div class="popup-box-header">
+                <div class="popup-box-header-title">Subscription Details</div>
+                <div class="popup-box-header-close popup-close">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+              <div class="popup-box-body">payment</div>
+            </div>
+          </div>
+        </section>
+        <section class="popup" id="share-this">
+          <div class="container">
+            <div class="popup-backdrop"></div>
+            <div class="popup-box">
+              <div class="popup-box-header">
+                <div class="popup-box-header-title">Share</div>
+                <div class="popup-box-header-close popup-close">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+              <div class="popup-box-body">
+                <!-- ShareThis BEGIN -->
+                <div class="sharethis-inline-share-buttons"></div>
+                <!-- ShareThis END -->
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
     <script
