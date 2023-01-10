@@ -27,10 +27,23 @@ typeof $ === "function" &&
         body.slideToggle();
       });
     });
+
     $("[popup-switch]").click(function () {
       $(`#${$(this).attr("popup-switch")}`).show();
     });
     $(".popup-backdrop, .popup-close").click(function () {
       $(this).closest(".popup").hide();
+    });
+
+    $(".about_course-item").click(function () {
+      $(".about_course-view").hide();
+      $(`#${$(this).attr("view")}`).show();
+    });
+
+    $(".about_course-index-lesson-title").click(function () {
+      $(
+        ".about_course-index-lesson-description",
+        $(this).closest(".about_course-index-lesson")
+      ).toggle();
     });
   });
