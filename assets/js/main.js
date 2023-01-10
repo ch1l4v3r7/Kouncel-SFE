@@ -45,5 +45,7 @@ typeof $ === "function" &&
         ".about_course-index-lesson-description",
         $(this).closest(".about_course-index-lesson")
       ).toggle();
+      $(".about_course-view").hide();
+      $(`#${$(this).attr("view")}`).show();
     });
   });
