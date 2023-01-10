@@ -2836,7 +2836,143 @@
                   <i class="fa-solid fa-xmark"></i>
                 </div>
               </div>
-              <div class="popup-box-body">payment</div>
+              <div class="popup-box-body">
+                <div class="payment">
+                  <div class="payment-form">
+                    <div class="payment-section">
+                      <div class="payment-section-header">Course Details</div>
+                      <div class="payment-section-body">
+                        <div class="payment-details">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td class="bold">Course Name</td>
+                                <td class="bold">1,500 USD</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <hr />
+                        <div class="payment-details">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td class="highlighted">Valid for 6 Months</td>
+                                <td class="highlighted">
+                                  Expire on 3 May 2022
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment-section">
+                      <div class="payment-section-header">Promo Code</div>
+                      <div class="payment-section-body">
+                        <div class="payment-promo-code-form">
+                          <div class="form-inputs">
+                            <div class="form-input_container">
+                              <input
+                                class="form-input"
+                                type="text"
+                                placeholder="Enter Promo Code"
+                                name="promo-code"
+                              />
+                            </div>
+                            <div class="form-input_container">
+                              <button class="form-button" type="submit">
+                                Apply
+                              </button>
+                            </div>
+                          </div>
+                          <!-- in case form messages needed you can use one of 4 available
+                        types -->
+                          <!-- 1- type danger add theme--danger with .form-message and use <i class="fa-solid fa-circle-exclamation"></i> -->
+                          <!-- 2- type success add theme--success with .form-message and use <i class="fa-solid fa-circle-check"></i> -->
+                          <!-- 3- type warning add theme--warning with .form-message and use <i class="fa-solid fa-triangle-exclamation"></i> -->
+                          <!-- 4- type info add theme--info with .form-message and use <i class="fa-solid fa-circle-question"></i> -->
+                          <!-- <div class="form-messages">
+                          <div class="form-message theme--danger">
+                            <div class="form-message-icon">
+                              <i class="fa-solid fa-circle-exclamation"></i>
+                            </div>
+                            <div class="form-message-content">danger message</div>
+                          </div>
+                          <div class="form-message theme--success">
+                            <div class="form-message-icon">
+                              <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="form-message-content">success message</div>
+                          </div>
+                          <div class="form-message theme--warning">
+                            <div class="form-message-icon">
+                              <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <div class="form-message-content">warning message</div>
+                          </div>
+                          <div class="form-message theme--info">
+                            <div class="form-message-icon">
+                              <i class="fa-solid fa-circle-question"></i>
+                            </div>
+                            <div class="form-message-content">info message</div>
+                          </div>
+                        </div> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment-section">
+                      <div class="payment-section-header">Payment Details</div>
+                      <div class="payment-section-body">
+                        <div class="payment-details">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td>Course Price</td>
+                                <td>1,500 USD</td>
+                              </tr>
+                              <tr>
+                                <td>- Promo Code</td>
+                                <td>- 500 USD</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <hr />
+                        <div class="payment-details">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td class="bold">Final Price</td>
+                                <td class="bold">1,000 USD</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-action">
+                    <button class="form-button" popup-switch="payment-gateway">
+                      Go To Payment
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="popup" id="payment-gateway">
+          <div class="container">
+            <div class="popup-backdrop"></div>
+            <div class="popup-box">
+              <div class="popup-box-header">
+                <div class="popup-box-header-title">Payment</div>
+                <div class="popup-box-header-close popup-close">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+              <div class="popup-box-body">payment gateway iframe</div>
             </div>
           </div>
         </section>
